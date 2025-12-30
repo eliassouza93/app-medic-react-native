@@ -5,6 +5,6 @@ export default StyleSheet.create({
     flex: 1,
   },
   image: {
-    flex: 1
-  }
+    flex: 1,
+  },
 });

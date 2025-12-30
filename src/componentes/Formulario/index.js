@@ -1,7 +1,7 @@
-import { View, TextInput, Text } from 'react-native';
-import styles from './styles';
+import { View, TextInput, Text } from "react-native";
+import styles from "./styles";
 
-export function Formulario({ titulo, texto }){
+export function Formulario({ titulo, texto }) {
   return (
     <View style={styles.container}>
       <Text style={styles.titulo}>{titulo}</Text>

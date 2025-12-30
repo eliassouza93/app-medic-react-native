@@ -33,7 +33,7 @@ export default StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-around",
     flexDirection: "row",
-    backgroundColor: '#4894FF',
+    backgroundColor: "#4894FF",
     marginVertical: 10,
     marginTop: 20,
     marginBottom: 50,
@@ -42,7 +42,7 @@ export default StyleSheet.create({
     fontWeight: "700",
     fontFamily: "Roboto",
     fontSize: 16,
-    color: '#FFFFFF',
+    color: "#FFFFFF",
   },
   detalhesMedia: {
     width: "100%",

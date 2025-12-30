@@ -10,6 +10,6 @@ export function InformacoesUsuario({ nome, detalhes, foto }) {
         <Text style={styles.nome}>{nome}</Text>
         <Text style={styles.consultas}>{detalhes}</Text>
       </View>
-    </View> 
+    </View>
   );
 }

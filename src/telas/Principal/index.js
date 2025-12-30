@@ -9,16 +9,13 @@ import styles from "./styles";
 import { CardConsultaShimmerEffect } from "../../componentes/CardConsultaShimmerEffect";
 
 export default function Principal({ navigation }) {
-  const [tempo, setTempo] = useState(false)
+  const [tempo, setTempo] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
-      setTempo(true)
+      setTempo(true);
     }, 3000);
-
-
-  }, [])
-
+  }, []);
 
   return (
     <TelaDeFundo>
@@ -30,27 +27,27 @@ export default function Principal({ navigation }) {
         />
 
         <Text style={styles.texto}>Hoje</Text>
- 
-        {tempo ?
+
+        {tempo ? (
           <FlatList
             data={pacientes}
-            keyExtractor={item => String(item.id)}
-            renderItem={({ item }) =>
-              <TouchableOpacity onPress={() => navigation.navigate("Detalhes", item)}>
+            keyExtractor={(item) => String(item.id)}
+            renderItem={({ item }) => (
+              <TouchableOpacity
+                onPress={() => navigation.navigate("Detalhes", item)}
+              >
                 <CardConsulta {...item} />
               </TouchableOpacity>
-            }
+            )}
             showsVerticalScrollIndicator={false}
           />
-
-          : <>
+        ) : (
+          <>
             <CardConsultaShimmerEffect />
             <CardConsultaShimmerEffect />
             <CardConsultaShimmerEffect />
           </>
-        }
-
-
+        )}
       </View>
     </TelaDeFundo>
   );
